@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Conversor de Moedas Virtuais</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <div class="particles"></div>
+
+  <button class="theme-toggle" id="themeToggle">
+    🌙
+  </button>
+
+  <div class="container">
+
+    <div class="card">
+
+      <h1>Conversor de Moedas Virtuais</h1>
+
+      <p class="subtitle">
+        Converta Reais em moedas de jogos
+      </p>
+
+      <div class="input-group">
+        <label>Valor em Reais (R$)</label>
+
+        <input
+          type="number"
+          id="money"
+          placeholder="Digite o valor"
+        >
+      </div>
+
+      <div class="input-group">
+        <label>Selecione o jogo</label>
+
+        <select id="game">
+
+          <option value="robux">
+            Roblox - Robux
+          </option>
+
+          <option value="vbucks">
+            Fortnite - V-Bucks
+          </option>
+
+          <option value="gems">
+            Clash Royale - Gemas
+          </option>
+
+          <option value="cod">
+            COD Mobile - CP
+          </option>
+
+        </select>
+      </div>
+
+      <button id="convertBtn">
+        Converter
+      </button>
+
+      <div class="result" id="result">
+
+        <img
+          id="gameImage"
+          src="./img/robux.png"
+          alt="Moeda do jogo"
+        >
+
+        <h2 id="resultText">
+          Resultado aparecerá aqui
+        </h2>
+
+      </div>
+
+      <div class="history">
+
+        <h3>Histórico</h3>
+
+        <ul id="historyList"></ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="./js/script.js"></script>
+
+</body>
+</html>
